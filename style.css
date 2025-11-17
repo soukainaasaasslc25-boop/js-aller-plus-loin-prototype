@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+/* ===== Style général ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-image: url("image/foret.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f2f2f2;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Titre principal ===== */
+h1 {
+    margin-top: 60px;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Formulaire ===== */
+form {
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px 30px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+input {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fdfdfd;
+    transition: 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 0 10px rgba(255, 215, 128, 0.7);
+}
+
+/* ===== Bouton ===== */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    background: linear-gradient(135deg, #f5b642, #ff7b00);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 166, 0, 0.5);
+}
+
+/* ===== Section des données météo ===== */
+section {
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 40px;
+    width: 340px;
+    border-radius: 25px;
+    padding: 25px;
+    color: #fff;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Nom de la ville ===== */
+.nom {
+    font-size: 2rem;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #ffe9b3;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Température ===== */
+.temperature {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    margin: 10px 0;
+}
+
+/* ===== Description météo ===== */
+p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+/* ===== Icône météo principale ===== */
+.img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+/* ===== Bloc infos secondaires ===== */
+.div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 10px;
+    justify-items: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 15px 10px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Chaque info (humidité, vent, etc.) ===== */
+.div p {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+}
+
+/* ===== Couleurs & icônes ===== */
+.humidity {
+    color: #7dd3fc;
+}
+
+.speed {
+    color: #ffe9b3;
+}
+
+/* lever / coucher du soleil */
+.div p:nth-child(3),
+.div p:nth-child(4) {
+    color: #ffe9b3;
+}
+
+/* ===== Icônes Font Awesome ===== */
+.div i {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
