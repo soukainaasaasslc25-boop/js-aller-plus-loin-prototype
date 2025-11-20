@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
 
-/* ===== Style général ===== */
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +15,7 @@ body {
     align-items: center;
 }
 
-/* ===== Titre principal ===== */
+
 h1 {
     margin-top: 60px;
     color: #fefefe;
@@ -27,7 +25,7 @@ h1 {
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* ===== Formulaire ===== */
+
 form {
     margin-top: 25px;
     background: rgba(255, 255, 255, 0.15);
@@ -54,7 +52,7 @@ input:focus {
     box-shadow: 0 0 10px rgba(255, 215, 128, 0.7);
 }
 
-/* ===== Bouton ===== */
+
 button {
     padding: 12px 20px;
     border: none;
@@ -73,7 +71,7 @@ button:hover {
     box-shadow: 0 4px 15px rgba(255, 166, 0, 0.5);
 }
 
-/* ===== Section des données météo ===== */
+
 section {
     background: rgba(255, 255, 255, 0.15);
     margin-top: 40px;
@@ -85,7 +83,7 @@ section {
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* ===== Nom de la ville ===== */
+
 .nom {
     font-size: 2rem;
     font-family: "Nunito", sans-serif;
@@ -95,7 +93,7 @@ section {
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== Température ===== */
+
 .temperature {
     font-size: 4.5rem;
     font-weight: 800;
@@ -104,20 +102,20 @@ section {
     margin: 10px 0;
 }
 
-/* ===== Description météo ===== */
+
 p {
     font-size: 1.5rem;
     margin: 5px 0;
 }
 
-/* ===== Icône météo principale ===== */
+
 .img {
     width: 100px;
     height: 100px;
     margin: 10px 0;
 }
 
-/* ===== Bloc infos secondaires ===== */
+
 .div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -133,7 +131,7 @@ p {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== Chaque info (humidité, vent, etc.) ===== */
+
 .div p {
     display: flex;
     align-items: center;
@@ -141,7 +139,7 @@ p {
     font-weight: 600;
 }
 
-/* ===== Couleurs & icônes ===== */
+
 .humidity {
     color: #7dd3fc;
 }
@@ -150,14 +148,9 @@ p {
     color: #ffe9b3;
 }
 
-/* lever / coucher du soleil */
+
 .div p:nth-child(3),
 .div p:nth-child(4) {
     color: #ffe9b3;
 }
 
-/* ===== Icônes Font Awesome ===== */
-.div i {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
